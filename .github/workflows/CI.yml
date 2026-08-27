@@ -37,6 +37,8 @@ jobs:
             toolchain: {compiler: intel, version: '2025.2'}
           - os: macos-14  # gcc@10 not available on macos-14 (ARM64)
             toolchain: {compiler: gcc, version: 10}
+          - os: macos-14  # gcc@11 broken on macos-14 (ARM64)
+            toolchain: {compiler: gcc, version: 11}
           - os: macos-15-intel  # Intel compiler not available on macOS
             toolchain: {compiler: intel, version: '2025.2'}
           - os: macos-15-intel  # gcc@10 not available on macos-15
